@@ -1,0 +1,282 @@
+.jd_layout {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 1000px;
+}
+
+
+/* 头部 */
+
+.jd_header {
+    height: 40px;
+    background-color: #e92322;
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    z-index: 9999;
+}
+
+.jd_header a {
+    display: block;
+    position: absolute;
+    color: #fff;
+    z-index: 10;
+}
+
+.jd_header .jd_logo {
+    width: 57px;
+    height: 21px;
+    background-position: 0 -108px;
+    left: 10px;
+    top: 10px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+}
+
+.jd_header .jd_login {
+    right: 8px;
+    top: 12px;
+}
+
+.jd_header form {
+    height: 100%;
+    width: 100%;
+    padding: 5px 40px 5px 70px;
+    position: relative;
+}
+
+.jd_header form input {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    padding-left: 24px;
+}
+
+form::after {
+    content: "";
+    width: 20px;
+    height: 21px;
+    position: absolute;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -60px -110px;
+    left: 76px;
+    top: 11px;
+}
+
+
+/* 头部 */
+
+
+/* 轮播图 */
+
+.jd_banner {
+    width: 100%;
+}
+
+.jd_banner .imgBox {
+    width: 800%;
+}
+
+.imgBox li {
+    float: left;
+    width: 12.5%;
+}
+
+.imgBox li a {
+    display: block;
+}
+
+.imgBox li img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.jd_banner .dotBox {
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    transform: translateX(-50%);
+}
+
+.dotBox li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.dotBox li:first-of-type {
+    background-color: #fff;
+    margin-left: 0;
+}
+
+
+/* 轮播图 */
+
+
+/* 导航 */
+
+.jd_nav {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.jd_nav ul {
+    width: 100%;
+}
+
+.jd_nav ul li {
+    float: left;
+    width: 25%;
+}
+
+.jd_nav a {
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.jd_nav a img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+/* 导航 */
+
+
+/* 主体 */
+
+.products {
+    width: 100%;
+}
+
+.products .product {
+    width: 100%;
+}
+
+.product .jd_title {
+    height: 50px;
+    font-weight: bold;
+    color: #666;
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+.jd_title p {
+    display: inline-block;
+    position: relative;
+}
+
+.jd_title p::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 12px;
+    background-color: #e92322;
+    position: absolute;
+    left: -6px;
+    top: 19px;
+}
+
+.product img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.product .jd_left {
+    float: left;
+    width: 50%;
+}
+
+.jd_left a {
+    display: block;
+}
+
+.product .jd_right {
+    float: right;
+    width: 50%;
+}
+
+.jd_right a {
+    display: block;
+}
+
+
+/* 单独处理掌上秒杀 */
+
+.product.active .jd_title {
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.jd_title i {
+    display: inline-block;
+    width: 18px;
+    height: 24px;
+    background-image: url("../images/jd-sprites.png");
+    background-size: 200px 200px;
+    background-position: -85px -110px;
+    vertical-align: middle;
+}
+
+.product.active .jd_title p {
+    color: #e92322;
+}
+
+.product.active .jd_title p::after {
+    content: "";
+    display: none;
+}
+
+.product.active span {
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    line-height: 12px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.product.active span:nth-of-type(3n) {
+    background-color: #fff;
+    color: #000;
+}
+
+.product.active a {
+    float: right;
+    margin-right: 40px;
+    color: #666;
+}
+
+.product.active .jd_main {
+    padding: 10px 20px;
+}
+
+.product.active ul {
+    width: 100%;
+}
+
+.product.active li {
+    width: 33.33%;
+    float: left;
+}
+
+.product.active a {
+    display: block;
+    text-align: center;
+}
+
+.product.active img {
+    width: 100%;
+}
+
+
+/* 主体 */
